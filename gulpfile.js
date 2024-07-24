@@ -5,7 +5,7 @@ const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const open = require('gulp-open');
 
-// Задача для компиляции SCSS-файлов в CSS-файлы и их объединения
+// * Задача для компиляции SCSS-файлов в CSS-файлы и их объединения
 function compileSass() {
     return gulp.src('src/sass/**/*.scss')
         .pipe(sass())
@@ -15,7 +15,7 @@ function compileSass() {
         .pipe(browserSync.stream());
 }
 
-// Задача для запуска локального сервера и отслеживания изменений в файлах
+// * Задача для запуска локального сервера и отслеживания изменений в файлах
 function serve() {
     browserSync.init({
         server: {
