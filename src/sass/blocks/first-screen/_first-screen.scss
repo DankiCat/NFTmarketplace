@@ -1,0 +1,167 @@
+.first-screen {
+    padding-top: 242px;
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__blur {
+        position: absolute;
+        z-index: -1;
+        &_0 {
+            width: 770px;
+            height: 1050px;
+            background-color: rgba(79, 70, 78, 0.45);
+            top: -242px;
+            right: 0;
+        }
+        &_1 {
+            top: -242px;
+            right: 0;
+        }
+        &_2 {
+            top: 150px;
+            right: 80px;
+        }
+        &_3 {
+            top: 22px;
+            left: 0;
+        }
+        &_4 {
+            top: 0;
+            right: 0;
+        }
+        &_5 {
+            top: -242px;
+            right: 0;
+        }
+        &_6 {
+            top: 0;
+            right: 0;
+        }
+    }
+    &__left-container {
+        width: 710px;
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        span {
+            color: $primColor1;
+        }
+    }
+    &__buttons {
+        margin-top: 77px;
+        height: 84px;
+        width: 562px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__button {
+        width: 257px;
+        height: 84px;
+        font-size: 28px;
+    }
+    &__statistics {
+        margin-top: 121px;
+        width: 648px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__number {
+        font-size: 62px;
+        font-weight: 700;
+        color: $primColor3;
+    }
+    &__stat-label {
+        font-family: 'Work Sans', sans-serif;
+        margin-top: 2px;
+        font-size: 24px;
+        line-height: 35.5px;
+        color: #9B9E9A;
+        text-transform: capitalize;
+    }
+    &__right-container {
+        padding-right: 73px;
+    }
+    &__card {
+        width: 558px;
+        height: 718px;
+        background: url('../images/nftCards/nftCardFirstScreen.svg');
+        position: relative;
+    }
+    &__card-label {
+        background: rgb(255,137,61);
+        background: linear-gradient(117deg, rgba(255,137,61,0.5) -28%, rgba(250,250,250,0.9) 140%);
+        height: 98px;
+        position: absolute;
+        top: 22px;
+        left: 22px;
+        width: 512px;
+        padding: 18px 55px 0 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__bid, &__time {
+        height: 100%;
+    }
+    &__label {
+        font-size: 18px;
+        font-weight: 600;
+        color: #E4DEE7;
+        letter-spacing: 8%;
+        text-transform: capitalize;
+    }
+    &__text {
+        margin-top: 11px;
+        font-weight: 700;
+        font-size: 32px;
+        color: white;
+    }
+    &__bottom-block {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 142px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 35px 40px 35px 60px;
+    }
+    &__artist {
+        height: 100%;
+    }
+    &__artist-label {
+        color: $primColor2;
+        letter-spacing: 7%;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    &__nickname > a {
+        color: #594D5E;
+        line-height: 35.5px;
+        font-weight: 500;
+        font-size: 24px;
+        font-family: 'Work Sans', sans-serif;
+        margin-top: 2px;
+    }
+    &__card-button {
+        height: 72px;
+        width: 205px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+}

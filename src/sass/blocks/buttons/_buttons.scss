@@ -1,0 +1,28 @@
+.btn {
+    border: 1px solid $primColor1;
+    background-color: rgba(233, 195, 167, .1);
+    color: $primColor3;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    transition: all 0.2s;
+    &_header {
+        color: $primColor1;
+    }
+    &_filled, &_card {
+        background-color: $primColor1;
+        color: black;
+    }
+    &:hover {
+        background-color: $primColor3;
+        color: black;
+        border-color: $primColor3;
+    }
+    &_card {
+        &:hover {
+            border-color: black;
+        }
+    }
+}

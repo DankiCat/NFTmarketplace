@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // * Импорт шрифта Work Sans из Google Fonts API 
-@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
 
 // * Импорт переменных и миксинов 
 @import 'base/variables';
@@ -16,3 +16,28 @@
 *:focus {
     outline: none !important;
 }
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: $backgroundColor;
+    &.scroll {
+        overflow-y: hidden;
+    }
+    height: 10000px;
+}
+
+.container {
+    padding: 0 80px;
+}
+
+// * Подключение стилей кнопок и заголовков
+@import 'blocks/buttons/buttons';
+@import 'blocks/titles/titles';
+
+// * Подключение стилей блоков 
+@import 'blocks/header/header';
+
+@import 'blocks/first-screen/first-screen';
